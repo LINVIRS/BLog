@@ -464,6 +464,7 @@
                         Date: <a href="#">September 15, 2021&nbsp;&nbsp;15:34:41</a>
                         </span>
                     
+					
                     
                         <span class="post-category">
                     Category:
@@ -472,6 +473,10 @@
                             
                         </span>
                     
+					<span id="/BLog/2021/09/15/Java%E7%9F%A5%E8%AF%86%E7%82%B9/" class="leancloud-visitors view" data-flag-title="Java知识点">
+  <em class="post-meta-item-text">Pageviews:</em>
+  <i class="leancloud-visitors-count">loading</i>
+</span>
                 </div>
             
         </header>
@@ -507,7 +512,7 @@
 <h1 id="10-Minor-GC-与-Full-GC-分别在什么时候发生？"><a href="#10-Minor-GC-与-Full-GC-分别在什么时候发生？" class="headerlink" title="10.Minor GC 与 Full GC 分别在什么时候发生？"></a>10.Minor GC 与 Full GC 分别在什么时候发生？</h1><p>新生代内存不够用时候发生 MGC 也叫 YGC，JVM 内存不够的时候发生 FGC</p>
 <h1 id="11-几种常用的内存调试工具：jmap、jstack、jconsole、jhat？"><a href="#11-几种常用的内存调试工具：jmap、jstack、jconsole、jhat？" class="headerlink" title="11. 几种常用的内存调试工具：jmap、jstack、jconsole、jhat？"></a>11. 几种常用的内存调试工具：jmap、jstack、jconsole、jhat？</h1><p>jstack 可以看当前栈的情况，jmap 查看内存，jhat 进行 dump 堆的信息 mat（eclipse 的也要了解一下）</p>
 <h1 id="12-什么是类的加载"><a href="#12-什么是类的加载" class="headerlink" title="12.什么是类的加载"></a>12.什么是类的加载</h1><p>类的加载指的是将类的.class 文件中的二进制数据读入到内存中，将其放在运行时数据区的方法区内，然后在堆区创建一个 java.lang.Class 对象，用来封装类在方法区内的数据结构。类的加载的最终产品是位于堆区中的 Class 对象，Class 对象封装了类在方法区内的数据结构，并且向 Java 程序员提供了访问方法区内的数据结构的接口。</p>
-<h1 id="13-类加载器"><a href="#13-类加载器" class="headerlink" title="13.类加载器"></a>13.类加载器</h1><p><img src="https://raw.githubusercontent.com/wanglin1987153442/BLog/gh-pages/img/a3cc3370-5a00-11ea-8155-9d6d04886d5b.jpg" alt="在这里插入图片描述"></p>
+<h1 id="13-类加载器"><a href="#13-类加载器" class="headerlink" title="13.类加载器"></a>13.类加载器</h1><p><img src="https://raw.githubusercontent.com/wanglin1987153442/BLog/master/image/c5238280-5a00-11ea-aae6-17c0629b6dc0.jpg" alt="在这里插入图片描述"></p>
 <ul>
 <li>启动类加载器：Bootstrap ClassLoader，负责加载存放在 JDK\jre\lib(JDK 代表 JDK 的安装目录，下同)下，或被-Xbootclasspath 参数指定的路径中的，并且能被虚拟机识别的类库</li>
 <li>扩展类加载：Extension ClassLoader，该加载器由 sun.misc.Launcher$ExtClassLoader 实现，它负责加载 DK\jre\lib\ext 目录中，或者由 java.ext.dirs 系统变量指定的路径中的所有类库（如 javax.*开头的类），开发者可以直接使用扩展类加载器。</li>
@@ -531,7 +536,7 @@
 <p>3.将除对象头外的对象内存空间初始化为 0</p>
 <p>4.对对象头进行必要设置</p>
 <h1 id="16-类的生命周期"><a href="#16-类的生命周期" class="headerlink" title="16.类的生命周期"></a>16.类的生命周期</h1><p>类的生命周期包括这几个部分，加载、连接、初始化、使用和卸载，其中前三部是类的加载的过程,如下图；</p>
-<p><img src="https://raw.githubusercontent.com/wanglin1987153442/BLog/gh-pages/img/d2940fc0-5a00-11ea-a695-8f4c079b036d.jpg" alt="在这里插入图片描述"></p>
+<p><img src="https://raw.githubusercontent.com/wanglin1987153442/BLog/master/image/image-20210916233220315.png" alt="img"></p>
 <p>java 类加载需要经历以下 几个过程：</p>
 <ul>
 <li>加载</li>
@@ -625,6 +630,8 @@
 
         </div>
 
+	
+
         
             <section class="post-copyright">
                 
@@ -654,6 +661,32 @@
 
             </section>
         
+		
+		 
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+      el: '.valine_comment',
+      app_id: '0EcOrd6WiYxqvMxkAA27ywFA-gzGzoHsz',
+      app_key: 'exrS4Ld0sQ47jxSHFG1vFvFB',
+      placeholder: '请和我交流吧 ^_^',
+      notify: '',
+      verify: '',
+    });
+</script>
+    </section>
+          
+	 
         <section class="post-tags">
             <div>
                 <span>Tag(s):</span>
@@ -678,7 +711,7 @@
             
         </section>
 
-
+   
     </article>
 </div>
 
